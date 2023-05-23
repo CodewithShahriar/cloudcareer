@@ -4,8 +4,8 @@
         "image": "../src/assets/Logo/google-1-1 1.png",
         "name": "Google LLC",
         "jobCategories": [
-            "Full Time",
-            "Onsite"
+            "Onsite",
+            "Full Time"
         ],
         "jobTitle": "Senior Product Designer",
         "jobLocation": "Mountain View, CA",
@@ -99,7 +99,7 @@
         "image": "../src/assets/Logo/amazon_- logo-1000x302.png",
         "name": "Amazon",
         "jobCategories": [
-            "Remote",
+            "Onsite",
             "Full Time"
         ],
         "jobTitle": "Senior Data Scientist",

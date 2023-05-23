@@ -34,7 +34,7 @@ const SingleAppliedJob = ({singleAppliedJob}) => {
         <img className="h-10 w-32 drop-shadow-lg" src={image} alt="CompanyImg" />
       </div>
       <div>
-      <h2 className="text-2xl font-bold mt-7">{jobTitle}</h2>
+      <h2 className="text-2xl font-bold mt-7 lg:mt-0">{jobTitle}</h2>
       <p className="mt-2 text-lg font-semibold text-gray-500">{name}</p>
       <div className="color-gradient flex gap-4 mt-4">
         {jobCategories.map((category) => (
