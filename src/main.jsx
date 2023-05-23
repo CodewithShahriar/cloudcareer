@@ -9,16 +9,19 @@ import Blogs from './components/Blogs'
 import AppliedJobs from './components/AppliedJobs'
 import StartApplying from './components/StartApplying'
 import Home from './components/Home/Home'
+import { companiesData } from './components/loader/getData'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
     errorElement: <ErrorPage />,
+    // loader: companiesData,
     children: [
       {
         path: '/',
-        element: <Home />
+        element: <Home />,
+        loader: () => fetch('companies.json')
       },
       {
         path: '/statistics',

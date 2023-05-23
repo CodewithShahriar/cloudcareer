@@ -2,7 +2,7 @@
     {
         "id": 1,
         "image": "../src/assets/Logo/google-1-1 1.png",
-        "name": "Google",
+        "name": "Google LLC",
         "jobCategories": [
             "Full Time",
             "Onsite"
@@ -42,7 +42,7 @@
         "image": "../src/assets/Logo/tesla-9 1.png",
         "name": "Tesla",
         "jobCategories": [
-            "onsite",
+            "Onsite",
             "Full Time"
         ],
         "jobTitle": "Software Engineer",
@@ -77,7 +77,7 @@
     },
     {
         "id": 5,
-        "image": "facebook.jpg",
+        "image": "../src/assets/Logo/Meta-Logo.png",
         "name": "Meta",
         "jobCategories": [
             "Remote",
@@ -96,7 +96,7 @@
     },
     {
         "id": 6,
-        "image": "amazon.jpg",
+        "image": "../src/assets/Logo/amazon_- logo-1000x302.png",
         "name": "Amazon",
         "jobCategories": [
             "Remote",

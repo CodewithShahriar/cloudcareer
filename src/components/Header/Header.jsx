@@ -57,7 +57,7 @@ const Header = () => {
           <ul>
             <li className="ml-auto hidden lg:block">
               <Link to="/startApplying" className="inline-flex items-center">
-                <button className="btn ml-2 text-xl font-bold tracking-wide text-gray-800">
+                <button className="btn text-xl font-bold tracking-wide text-gray-800">
                   Start Applying
                 </button>
               </Link>

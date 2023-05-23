@@ -1,9 +1,15 @@
 import { data } from "autoprefixer";
 import './Home.css'
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import JobList from "../JobList";
+import { JobCompanies } from "../../App";
+import { useLoaderData } from "react-router-dom";
+import CompanyData from "../Companydata/CompanyData";
 
 const Home = () => {
+  const companyData = useLoaderData();
+  // console.log(companyData);
+  
   const [jobList, setJobList] = useState([]);
   useEffect(() => {
     fetch("joblist.json")
@@ -11,13 +17,18 @@ const Home = () => {
       .then((data) => setJobList(data));
   }, []);
 
+  // const company = useContext(JobCompanies);
+  // console.log(company);
+  
+
   return (
     <div className="">
+
       {/* header Section */}
       <section className="bg-blue-50 drop-shadow-xl">
-        <div className="my-container flex justify-center items-center gap-16">
+        <div className="my-container flex flex-col md:flex-row   justify-center items-center gap-16">
         <div>
-            <h1 className="header-title text-7xl font-bold  ">
+            <h1 className="header-title text-5xl md:text-6xl lg:text-7xl font-bold  ">
                 One Step Closer To Your 
                 <br />
                 <span className="text-gradient">Dream Job</span>
@@ -32,7 +43,7 @@ const Home = () => {
       </section>
 
       {/* Job Category List */}
-      <section className=" mx-auto ">
+      <section className="my-container mx-auto ">
         <h1 className="text-5xl text-center  font-bold mt-28">
           Job Category List
         </h1>
@@ -47,11 +58,22 @@ const Home = () => {
       </section>
 
       {/* Featured Jobs */}
-      <section>
+      <section className="my-container">
         <h1 className="text-5xl text-center font-bold mt-28">Featured Jobs</h1>
         <p className="text-gray-500 text-center mt-4">
         With our user-friendly platform, you can easily track your job search progress and stay organized throughout the application process.
         </p>
+        <div className="grid lg:grid-cols-2 mt-8 gap-8">
+          {
+            companyData.map(data => <CompanyData
+            key={data.id}
+            data={data}
+               />)
+          }
+        </div>
+          <div className="flex ">
+          <button className="btn mt-9 mx-auto">See All Jobs</button>
+          </div>
       </section>
     </div>
   );

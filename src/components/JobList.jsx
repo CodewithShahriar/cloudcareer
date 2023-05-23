@@ -1,7 +1,7 @@
 import React from 'react';
 
 const JobList = ({job}) => {
-    console.log(job);
+    // console.log(job);
     return (
         <div className='bg-purple-50 mt-7 p-9 rounded-lg'>
             

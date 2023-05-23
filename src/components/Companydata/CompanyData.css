@@ -1,0 +1,12 @@
+.color-gradient{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #6c36ea,#cb54e6, #ea15ee);
+}
+.color-gradient :hover{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #ea36e4,#cb54e6, #9b15ee);
+}
