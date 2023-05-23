@@ -7,12 +7,12 @@
     {
         "id": "aa2",
         "name": "Assignment 2",
-        "marks": 58
+        "marks": 46
     },
     {
         "id": "aa3",
         "name": "Assignment 3",
-        "marks": 60
+        "marks": 50
     },
     {
         "id": "aa4",
@@ -22,21 +22,16 @@
     {
         "id": "aa5",
         "name": "Assignment 5",
-        "marks": 55
+        "marks": 60
     },
     {
         "id": "aa6",
         "name": "Assignment 6",
-        "marks": 54
+        "marks": 60
     },
     {
         "id": "aa7",
         "name": "Assignment 7",
-        "marks": 60
-    },
-    {
-        "id": "aa8",
-        "name": "Assignment 8",
         "marks": 60
     }
 ]

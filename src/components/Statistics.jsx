@@ -12,7 +12,7 @@ import {
 
 const Statistics = () => {
   const assignmentData = useLoaderData();
-  // console.log(assignmentData);
+  console.log(assignmentData);
   return (
     <>
       {/* header section */}
@@ -21,31 +21,31 @@ const Statistics = () => {
       </section>
 
       {/* Area chart for assignment */}
-      <section className="my-container">
-        <ResponsiveContainer width="100%" height="100%">
-          <AreaChart
-            width={500}
-            height={400}
-            data={assignmentData}
-            margin={{
-              top: 10,
-              right: 30,
-              left: 0,
-              bottom: 0,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey={name} />
-            <YAxis />
-            <Tooltip />
-            <Area
-              type="monotone"
-              dataKey="marks"
-              stroke="#8884d8"
-              fill="#8884d8"
-            />
-          </AreaChart>
-        </ResponsiveContainer>
+      <section className="my-container mt-24">
+        <div className="w-full h-[300px] sm:h-[400px] lg:h-[500px]">
+          <ResponsiveContainer>
+            <AreaChart
+              data={assignmentData}
+              margin={{
+                top: 10,
+                right: 30,
+                left: 0,
+                bottom: 0,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Area
+                type="monotone"
+                dataKey="marks"
+                stroke="#ba43de"
+                fill="#8884d8"
+              />
+            </AreaChart>
+          </ResponsiveContainer>
+        </div>
       </section>
     </>
   );

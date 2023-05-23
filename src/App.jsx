@@ -20,9 +20,9 @@ const App = () => {
         <ToastContainer />
         {/* <CartJobCompanies.Provider> */}
           <Header />
-          <div className="min-h-[calc(100vh-200px)]">
+          {/* <div className="min-h-[calc(100vh-200px)]"> */}
           <Outlet />
-          </div>
+          {/* </div> */}
           {/* <Footer /> */}
         {/* </CartJobCompanies.Provider> */}
 
