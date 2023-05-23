@@ -1,0 +1,14 @@
+.header-title{
+    line-height: 90px;
+}
+
+.text-gradient{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #8054e6,#8054e6, #c648ec);
+}
+
+.header-img{
+    width: 1000px;
+}

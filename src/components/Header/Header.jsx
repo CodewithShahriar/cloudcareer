@@ -8,14 +8,14 @@ import "./header.css";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="header bg-blue-50">
+    <div className=" bg-blue-50">
       <div className="px-4 py-5 relative  md:px-24 lg:px-8">
         <div className="my-container relative mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl flex items-center justify-between">
           {/* Logo Section */}
           <Link to="/" className="inline-flex items-center">
             <CloudIcon className="lg:h-12 lg:w-12 md:h-10 md:w-10 h-8 w-8 text-blue-500" />
             <span className="ml-2 lg:text-4xl md:text-3xl text-2xl font-bold tracking-wide text-gray-800">
-              CloudX
+              Cloud Career
             </span>
           </Link>
 
@@ -145,14 +145,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {/* header poster */}
-    <div>
-      <div>
-
-      </div>
-      <img src="../../assets/images/P3OLGJ1 copy 1.png" alt="" />
-
-    </div>
     </div>
   );
 };
