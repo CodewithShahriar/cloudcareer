@@ -3,12 +3,14 @@ import Header from "./components/Header/Header";
 import { Outlet, useLoaderData } from "react-router-dom";
 import { companiesData } from "./components/loader/getData";
 import Footer from "./components/Footer";
+import CompanyData from "./components/Companydata/CompanyData";
 
-export const JobCompanies = createContext([]);
+export const JobCompanies = createContext();
 // console.log(JobCompanies);
 // export const CartJobCompanies = createContext([]);
 
 const App = () => {
+
   const companyData = useLoaderData()
   // console.log(companyData);
   return (
@@ -16,8 +18,10 @@ const App = () => {
       <JobCompanies.Provider value={companyData}>
         {/* <CartJobCompanies.Provider> */}
           <Header />
+          <div className="min-h-[calc(100vh-200px)]">
           <Outlet />
-          <Footer />
+          </div>
+          {/* <Footer /> */}
         {/* </CartJobCompanies.Provider> */}
       </JobCompanies.Provider>
     </div>

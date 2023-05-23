@@ -1,9 +1,11 @@
 import React from "react";
 import "./CompanyData.css";
 import { CurrencyDollarIcon, MapPinIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
-const CompanyData = ({ data }) => {
-  console.log(data);
+const CompanyData = ({ data, singleCompanyData }) => {
+  
+  // console.log(singleCompanyData);
   const {
     id,
     image,
@@ -17,7 +19,7 @@ const CompanyData = ({ data }) => {
     experiences,
   } = data;
   return (
-    <div className="border-solid border border-gray-500 p-9 rounded-lg shadow-xl drop-shadow-lg">
+    <div className="border-solid border border-gray-300 p-9 rounded-lg shadow-xl drop-shadow-lg">
       <div className="h-12 w-48 ">
         <img className="" src={image} alt="ICompanyImg" />
       </div>
@@ -44,7 +46,9 @@ const CompanyData = ({ data }) => {
           </p>
         </div>
       </div>
+      <Link to={`/jobDetails/${id}`}>
       <button className="btn mt-5">View Details</button>
+      </Link>
     </div>
   );
 };

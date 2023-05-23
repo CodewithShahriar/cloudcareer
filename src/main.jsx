@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { Router, RouterProvider, createBrowserRouter } from 'react-router-dom'
 import ErrorPage from './components/ErrorPage'
 import Statistics from './components/Statistics'
 import Blogs from './components/Blogs'
@@ -10,22 +10,26 @@ import AppliedJobs from './components/AppliedJobs'
 import StartApplying from './components/StartApplying'
 import Home from './components/Home/Home'
 import { companiesData } from './components/loader/getData'
+import JobDetails from './components/JobDetails/JobDetails'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
     errorElement: <ErrorPage />,
-    // loader: companiesData,
+    loader: companiesData,
     children: [
       {
         path: '/',
         element: <Home />,
-        loader: () => fetch('companies.json')
+      },
+      {
+        path: `/jobDetails/:Id`,
+        element: <JobDetails />,
       },
       {
         path: '/statistics',
-        element: <Statistics />
+        element: <Statistics />,
       },
       {
         path: '/blogs',
@@ -45,6 +49,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
+    <RouterProvider router={router}>
+      <Router />
+    </RouterProvider>
+  </React.StrictMode>
 )
