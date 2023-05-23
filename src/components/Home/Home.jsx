@@ -51,7 +51,7 @@ const Home = () => {
           <div>
             <img
               className="header-img ml-auto"
-              src="https://www.pngmart.com/files/15/Smiling-Business-Man-Standing-PNG-Image.png"
+              src="https://i.postimg.cc/CM82pRqW/header-poster1.png"
               alt="img"
             />
           </div>

@@ -12,8 +12,10 @@
 - View job descriptions: Users can view detailed job descriptions for each position and decide if they are a good fit.
 - Statistics page: Users can track their progress and see their assignment marks on an area chart.
 - Applied Jobs page: Users can view a list of companies where they have applied for jobs and filter them by remote or onsite positions.
+- And all pages have a footer
 - Block page: Added a section with questions to help users prepare for job interviews.
 - Fully responsive layout: The website is optimized for use on all devices, including desktops, tablets, and smartphones.
+
 
 
 ## Tech Stack
@@ -21,6 +23,7 @@
 
 - React (front-end)
 - Tailwind CSS (CSS framework)
+
 
 
 ## About the project
