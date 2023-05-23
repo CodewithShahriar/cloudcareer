@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "icon": "../src/assets/Icons/accounts 1.png",
+        "jobCategory": "Account & Finance",
+        "availableJobs": 224
+    },
+    {
+        "id": 2,
+        "icon": "../src/assets/Icons/business 1.png",
+        "jobCategory": "Creative Design",
+        "availableJobs": 224
+    },
+    {
+        "id": 3,
+        "icon": "../src/assets/Icons/social-media 1.png",
+        "jobCategory": "Marketing & Sales",
+        "availableJobs": 224
+    },
+    {
+        "id": 4,
+        "icon": "../src/assets/Icons/chip 1.png",
+        "jobCategory": "Engineering Job",
+        "availableJobs": 224
+    }
+]

@@ -1,0 +1,116 @@
+[
+    {
+        "id": 1,
+        "image": "../src/assets/Logo/google-1-1 1.png",
+        "name": "Google",
+        "jobCategories": [
+            "Full Time",
+            "Onsite"
+        ],
+        "jobTitle": "Senior Product Designer",
+        "jobLocation": "Mountain View, CA",
+        "salary": "100k - 150k",
+        "contactNumber": "+1-650-253-0000",
+        "officeEmail": "contact@google.com",
+        "officeAddress": "1600 Amphitheatre Parkway, Mountain View, CA 94043",
+        "jobDescription": "We are looking for a Senior Product Designer to join our team and help create innovative, user-focused products.",
+        "jobResponsibility": "Lead design projects across the entire product lifecycle and multiple product launches. Work with cross-functional teams to define product requirements, create user flows, wireframes, and prototypes.",
+        "educationalRequirements": "Bachelor's degree in Design or a related field from a reputable university. Master's degree preferred.",
+        "experiences": "5+ years of experience in product design, with a focus on user experience and user-centered design principles."
+    },
+    {
+        "id": 2,
+        "image": "../src/assets/Logo/netflix-4 1.png",
+        "name": "Netflix",
+        "jobCategories": [
+            "Remote",
+            "Full Time"
+        ],
+        "jobTitle": "Senior Software Engineer",
+        "jobLocation": "Los Gatos, CA",
+        "salary": "150k - 200k",
+        "contactNumber": "+1-408-540-3700",
+        "officeEmail": "contact@netflix.com",
+        "officeAddress": "100 Winchester Cir, Los Gatos, CA 95032",
+        "jobDescription": "We are seeking a Senior Software Engineer to help build and maintain our world-class streaming platform.",
+        "jobResponsibility": "Collaborate with cross-functional teams to design, develop and deliver scalable software solutions. Write clean, efficient and maintainable code. Continuously improve code quality, performance and reliability.",
+        "educationalRequirements": "Bachelor's or Master's degree in Computer Science or related field, or equivalent practical experience.",
+        "experiences": "7+ years of software engineering experience, with a focus on building large-scale distributed systems."
+    },
+    {
+        "id": 3,
+        "image": "../src/assets/Logo/tesla-9 1.png",
+        "name": "Tesla",
+        "jobCategories": [
+            "onsite",
+            "Full Time"
+        ],
+        "jobTitle": "Software Engineer",
+        "jobLocation": "Palo Alto, CA",
+        "salary": "130k - 180k",
+        "contactNumber": "+1-650-681-5100",
+        "officeEmail": "contact@tesla.com",
+        "officeAddress": "3500 Deer Creek Road, Palo Alto, CA 94304",
+        "jobDescription": "We are looking for a talented Software Engineer to help develop the software that powers our electric vehicles and energy products.",
+        "jobResponsibility": "Design, develop, and maintain software applications and systems for our electric vehicles and energy products. Work with cross-functional teams to define software requirements and ensure high-quality software development practices.",
+        "educationalRequirements": "Bachelor's degree in Computer Science or a related field from a reputable university.",
+        "experiences": "2-3 years of experience as a software engineer or a related role. Experience with programming languages such as Python, C++, or Java."
+    },
+    {
+        "id": 4,
+        "image": "../src/assets/Logo/Group 10021.png",
+        "name": "Airbnb",
+        "jobCategories": [
+            "Remote",
+            "Full Time"
+        ],
+        "jobTitle": "iOS Developer",
+        "jobLocation": "Cupertino, CA",
+        "salary": "120k - 170k",
+        "contactNumber": "+1-408-996-1010",
+        "officeEmail": "contact@apple.com",
+        "officeAddress": "1 Apple Park Way, Cupertino, CA 95014",
+        "jobDescription": "We are seeking an experienced iOS developer to join our team and help us build innovative mobile applications.",
+        "jobResponsibility": "Design and build advanced applications for the iOS platform. Collaborate with cross-functional teams to define, design, and ship new features.",
+        "educationalRequirements": "Bachelor's or Master's degree in Computer Science or a related field.",
+        "experiences": "5+ years of experience in iOS development, with a focus on Swift and Objective-C."
+    },
+    {
+        "id": 5,
+        "image": "facebook.jpg",
+        "name": "Meta",
+        "jobCategories": [
+            "Remote",
+            "Full Time"
+        ],
+        "jobTitle": "Technical Database Engineer",
+        "jobLocation": "Menlo Park, CA",
+        "salary": "120k - 170k",
+        "contactNumber": "+1-650-308-7300",
+        "officeEmail": "contact@fb.com",
+        "officeAddress": "1 Hacker Way, Menlo Park, CA 94025",
+        "jobDescription": "We are seeking a Technical Database Engineer to join our team and help build and maintain our data infrastructure.",
+        "jobResponsibility": "Design, build, and maintain scalable and reliable data infrastructure. Work with cross-functional teams to identify and solve data-related issues. Develop and maintain ETL processes, data pipelines, and data warehouse systems.",
+        "educationalRequirements": "Bachelor's degree in Computer Science, Engineering, or a related field from a reputable university.",
+        "experiences": "3+ years of experience as a database engineer or a related role. Experience with large-scale data infrastructure, data warehousing, ETL, and SQL."
+    },
+    {
+        "id": 6,
+        "image": "amazon.jpg",
+        "name": "Amazon",
+        "jobCategories": [
+            "Remote",
+            "Full Time"
+        ],
+        "jobTitle": "Senior Data Scientist",
+        "jobLocation": "Seattle, WA",
+        "salary": "120k - 200k",
+        "contactNumber": "+1-206-266-1000",
+        "officeEmail": "contact@amazon.com",
+        "officeAddress": "410 Terry Ave N, Seattle, WA 98109",
+        "jobDescription": "We are looking for a Senior Data Scientist to help us leverage data to make smarter business decisions.",
+        "jobResponsibility": "Work with cross-functional teams to identify and prioritize key business questions, design and execute experiments, build statistical and machine learning models, and communicate insights to stakeholders.",
+        "educationalRequirements": "Master's or PhD in a quantitative field such as Statistics, Mathematics, Computer Science, or related field, or equivalent practical experience.",
+        "experiences": "5+ years of experience in data science or related field, with a focus on statistical modeling, machine learning, and data analysis."
+    }
+]
