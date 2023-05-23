@@ -9,18 +9,18 @@
         "id": 2,
         "icon": "../src/assets/Icons/business 1.png",
         "jobCategory": "Creative Design",
-        "availableJobs": 224
+        "availableJobs": 300
     },
     {
         "id": 3,
         "icon": "../src/assets/Icons/social-media 1.png",
         "jobCategory": "Marketing & Sales",
-        "availableJobs": 224
+        "availableJobs": 158
     },
     {
         "id": 4,
         "icon": "../src/assets/Icons/chip 1.png",
         "jobCategory": "Engineering Job",
-        "availableJobs": 224
+        "availableJobs": 500
     }
 ]
