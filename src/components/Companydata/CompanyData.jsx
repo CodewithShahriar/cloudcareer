@@ -3,9 +3,8 @@ import "./CompanyData.css";
 import { CurrencyDollarIcon, MapPinIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 
-const CompanyData = ({ data, singleCompanyData }) => {
+const CompanyData = ({ data }) => {
   
-  // console.log(singleCompanyData);
   const {
     id,
     image,

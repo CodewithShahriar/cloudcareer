@@ -4,6 +4,7 @@ import { Outlet, useLoaderData } from "react-router-dom";
 import { companiesData } from "./components/loader/getData";
 import Footer from "./components/Footer";
 import CompanyData from "./components/Companydata/CompanyData";
+import { ToastContainer } from "react-toastify";
 
 export const JobCompanies = createContext();
 // console.log(JobCompanies);
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <div>
       <JobCompanies.Provider value={companyData}>
+        <ToastContainer />
         {/* <CartJobCompanies.Provider> */}
           <Header />
           <div className="min-h-[calc(100vh-200px)]">
@@ -23,6 +25,7 @@ const App = () => {
           </div>
           {/* <Footer /> */}
         {/* </CartJobCompanies.Provider> */}
+
       </JobCompanies.Provider>
     </div>
   );

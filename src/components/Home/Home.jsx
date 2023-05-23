@@ -13,15 +13,10 @@ const Home = () => {
     showAll ? companiesData : companiesData.slice(0, 4)
   );
 
-
   useEffect(() => {
     setCompanyData(showAll ? companiesData : companiesData.slice(0, 4));
   }, [showAll, companiesData]);
 
-  // const singleCompanyData = id => {
-
-  // }
-  // console.log(companyData);
 
   const [jobList, setJobList] = useState([]);
   useEffect(() => {

@@ -11,6 +11,7 @@ import StartApplying from './components/StartApplying'
 import Home from './components/Home/Home'
 import { companiesData } from './components/loader/getData'
 import JobDetails from './components/JobDetails/JobDetails'
+import 'react-toastify/dist/ReactToastify.css';
 
 const router = createBrowserRouter([
   {

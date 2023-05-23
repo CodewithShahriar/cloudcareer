@@ -1,0 +1,6 @@
+.text-gradient-job{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #aa41ef,#e336f3, #eb27b4);
+}
