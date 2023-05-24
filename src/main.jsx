@@ -7,7 +7,6 @@ import ErrorPage from './components/ErrorPage'
 import Statistics from './components/Statistics'
 import Blogs from './components/Blogs'
 import AppliedJobs from './components/AppliedJobs'
-import StartApplying from './components/StartApplying'
 import Home from './components/Home/Home'
 import { companiesData } from './components/loader/getData'
 import JobDetails from './components/JobDetails/JobDetails'
@@ -41,10 +40,7 @@ const router = createBrowserRouter([
         path: '/appliedJobs',
         element: <AppliedJobs />
       },
-      {
-        path: '/startApplying',
-        element: <StartApplying />
-      },
+      
     ]
   }
 ])

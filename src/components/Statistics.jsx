@@ -21,7 +21,10 @@ const Statistics = () => {
       </section>
 
       {/* Area chart for assignment */}
-      <section className="my-container mt-24">
+      <section className="my-container my-24 ">
+         <h1 className="text-4xl drop-shadow-lg font-bold text-gray-900 p-5 rounded-lg border-2 text-center bg-gradient-to-r from-blue-500 to-purple-400 hover:from-purple-400 hover:to-blue-500 duration-700 mb-24">
+         My Assignment Marks Are Showing On The Area Chart
+        </h1>
         <div className="w-full h-[300px] sm:h-[400px] lg:h-[500px]">
           <ResponsiveContainer>
             <AreaChart

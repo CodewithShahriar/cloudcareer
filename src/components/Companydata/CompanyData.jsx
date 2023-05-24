@@ -4,7 +4,6 @@ import { CurrencyDollarIcon, MapPinIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 
 const CompanyData = ({ data }) => {
-  
   const {
     id,
     image,
@@ -20,13 +19,16 @@ const CompanyData = ({ data }) => {
   return (
     <div className="border-solid border border-gray-300 p-9 rounded-lg shadow-xl drop-shadow-lg">
       <div className="h-12 w-48 ">
-        <img className="" src={image} alt="ICompanyImg" />
+        <img className="" src={image} alt="CompanyImg" />
       </div>
       <h2 className="text-2xl font-bold mt-7">{jobTitle}</h2>
       <p className="mt-2 text-lg font-semibold text-gray-500">{name}</p>
       <div className="color-gradient flex gap-4 mt-4">
-        {jobCategories.map((category) => (
-          <p className="border p-2 px-4 rounded-md font-bold text-base border-indigo-500/75 hover:border-rose-500/75">
+        {jobCategories.map((category, index) => (
+          <p
+            key={index}
+            className="border p-2 px-4 rounded-md font-bold text-base border-indigo-500/75 hover:border-rose-500/75"
+          >
             {category}
           </p>
         ))}
@@ -46,7 +48,7 @@ const CompanyData = ({ data }) => {
         </div>
       </div>
       <Link to={`/jobDetails/${id}`}>
-      <button className="btn mt-5">View Details</button>
+        <button className="btn mt-5">View Details</button>
       </Link>
     </div>
   );

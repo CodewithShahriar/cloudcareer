@@ -51,8 +51,8 @@ const JobDetails = () => {
 
       {/* Body Section */}
       <section className="my-container mt-28">
-        <div className="h-36">
-          <h2 className="font-bold text-5xl text-gradient-job">{name}</h2>
+        <div className="h-auto">
+          <h2 className="font-bold text-5xl text-gradient-job pb-6">{name}</h2>
         </div>
         <div className=" lg:flex grid justify-center items-center pt-7 gap-6 ">
           <div className="flex flex-col gap-6">

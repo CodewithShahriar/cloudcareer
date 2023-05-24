@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="bg-black pt-20 mt-32">
       <div className="my-container flex gap-16 text-white ">
         <div className="grid gap-5 w-4/12">
-          <h2 className="text-4xl font-bold">CloudX</h2>
+          <h2 className="text-4xl font-bold">Cloud Career</h2>
           <p className="text-base text-gray-400">
             Our platform offers personalized job recommendations based on your
             skills and preferences to help you find the perfect career path.
@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="mt-9  text-gray-50"/>
-      <p className="my-container text-base  text-gray-400">@2023 CloudX. All Rights Reserved</p>
+      <p className="my-container text-base  text-gray-400">@2023 Cloud Career. All Rights Reserved</p>
     </div>
   );
 };
