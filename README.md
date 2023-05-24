@@ -1,6 +1,6 @@
-# private repo te problem hoyeche tai public repo te code push diyechi
+# There was a problem in the private repo, so I pushed the code to the public repo
 ## b7a9-career-hub-CodewithSahriar
-# Live Site : [Cloud Career](https://comfy-meerkat-1743c4.netlify.app/ )
+# Live Site : [Cloud Career](https://rococo-custard-3eb140.netlify.app/ )
 ---
 
 ## Features Overview
