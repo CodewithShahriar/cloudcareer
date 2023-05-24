@@ -5,18 +5,23 @@ import JobList from "../JobList";
 import { JobCompanies } from "../../App";
 import { useLoaderData, useNavigation } from "react-router-dom";
 import CompanyData from "../Companydata/CompanyData";
+import LoadingSpinner from "../LoadingSpinner";
 
 const Home = () => {
+
+  // Loading Spinner 
+  const navigation = useNavigation();
+  if (navigation.state === "loading") {
+    return <LoadingSpinner />;
+  }
+
   const companiesData = useContext(JobCompanies);
   const [showAll, setShowAll] = useState(false);
-  const [companyData, setCompanyData] = useState(
-    showAll ? companiesData : companiesData.slice(0, 4)
-  );
+  const [companyData, setCompanyData] = useState(companiesData);
 
   useEffect(() => {
     setCompanyData(showAll ? companiesData : companiesData.slice(0, 4));
   }, [showAll, companiesData]);
-
 
   const [jobList, setJobList] = useState([]);
   useEffect(() => {
@@ -25,14 +30,11 @@ const Home = () => {
       .then((data) => setJobList(data));
   }, []);
 
-  // const company = useContext(JobCompanies);
-  // console.log(company);
-
   return (
     <div className="">
       {/* header Section */}
       <section className="bg-blue-50 drop-shadow-xl">
-        <div className="my-container flex flex-col md:flex-row   justify-center items-center gap-16">
+        <div className="my-container flex flex-col md:flex-row justify-center items-center gap-16">
           <div>
             <h1 className="header-title text-5xl md:text-6xl lg:text-7xl font-bold  ">
               One Step Closer To Your

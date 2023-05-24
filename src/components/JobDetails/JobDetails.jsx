@@ -49,7 +49,7 @@ const JobDetails = () => {
       <section className="bg-blue-50 relative drop-shadow-xl pb-32">
         <h1 className="text-4xl font-bold text-center">Job details</h1>
         <img
-          className="absolute w-72 bottom-0"
+          className="absolute lg:w-72 md:w-56 w-40 bottom-0"
           src="https://i.postimg.cc/fyYqcPsw/vector.png"
           alt=""
         />

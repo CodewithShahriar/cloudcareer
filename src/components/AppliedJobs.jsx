@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { JobCompanies } from "../App";
 import SingleAppliedJob from "./SingleAppliedJob/SingleAppliedJob";
 import { getStoredData } from "./Utils/FakeDb";
-import { ChevronDownIcon } from "@heroicons/react/24/solid";
+// import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 const AppliedJobs = () => {
   const companiesData = useContext(JobCompanies);
@@ -29,12 +29,16 @@ const AppliedJobs = () => {
         : appliedJobs.filter((job) => job.jobCategories.includes(option))
     );
   };
+  // const handleOptionChange = (event) => {
+  //   const option = event.target.value;
+  //   setSelectedOption(option);
+  // }
 
   // Filter applied jobs based on the selected option
-  const filteredJobsToShow =
-    selectedOption === "All"
-      ? appliedJobs
-      : appliedJobs.filter((job) => job.jobCategories.includes(selectedOption));
+  // const filteredJobsToShow =
+  //   selectedOption === "All"
+  //     ? appliedJobs
+  //     : appliedJobs.filter((job) => job.jobCategories.includes(selectedOption));
 
   return (
     <>
@@ -42,7 +46,7 @@ const AppliedJobs = () => {
       <section className="bg-blue-50 relative drop-shadow-xl pb-32">
         <h1 className="text-4xl font-bold text-center">Applied Jobs</h1>
         <img
-          className="absolute w-72 bottom-0"
+          className="absolute lg:w-72 md:w-56 w-40 bottom-0"
           src="https://i.postimg.cc/fyYqcPsw/vector.png"
           alt=""
         />
@@ -69,7 +73,7 @@ const AppliedJobs = () => {
 
         {/* Render filtered jobs */}
         <div className="grid gap-8 mt-9">
-          {filteredJobsToShow.map((singleAppliedJob) => (
+          {filteredJobs.map((singleAppliedJob) => (
             <SingleAppliedJob
               key={singleAppliedJob.id}
               singleAppliedJob={singleAppliedJob}

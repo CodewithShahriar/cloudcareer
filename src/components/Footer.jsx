@@ -22,7 +22,7 @@ const Footer = () => {
                 />
               </div>
             </Link>
-            <Link to="https://www.instagram.com">
+            <Link to="https://www.twitter.com">
               <div className="rounded-full w-10 h-10 bg-white">
                 <img
                   className="p-2"
@@ -31,12 +31,12 @@ const Footer = () => {
                 />
               </div>
             </Link>
-            <Link to="https://twitter.com">
+            <Link to="https://www.instagram.com">
               <div className="rounded-full w-10 h-10 bg-white">
                 <img
                   className="p-2"
                   src="https://i.postimg.cc/rF7BB9qt/instagram.png"
-                  alt="insta"
+                  alt="instagram"
                 />
               </div>
             </Link>
@@ -83,10 +83,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="mt-9  text-gray-50"/>
+      <hr className="mt-9  text-gray-50" />
       <div className="my-container flex justify-between">
-      <p className=" text-base  text-gray-400">@2023 Cloud Career. All Rights Reserved</p>
-      <p className=" text-base  text-gray-400">Powered by <span className="text-xl font-semibold">Cloud Career</span></p>
+        <p className=" text-base  text-gray-400">
+          @2023 Cloud Career. All Rights Reserved
+        </p>
+        <p className=" text-base  text-gray-400">
+          Powered by <span className="text-xl font-semibold">Cloud Career</span>
+        </p>
       </div>
     </div>
   );
