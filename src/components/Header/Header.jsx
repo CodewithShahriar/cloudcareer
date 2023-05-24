@@ -9,7 +9,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className=" bg-blue-50">
-      <div className="px-4 py-5 relative  md:px-24 lg:px-8">
+      <div className="px-4 py-5 relative  pb-24 md:px-24 lg:px-8">
+        <img
+          className="absolute w-64 right-0 top-0"
+          src="https://i.postimg.cc/sXk0Zrt6/vector1.png"
+          alt=""
+        />
         <div className="my-container relative mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl flex items-center justify-between">
           {/* Logo Section */}
           <Link to="/" className="inline-flex items-center">
@@ -144,11 +149,6 @@ const Header = () => {
             )}
           </div>
         </div>
-        {/* <img
-          className="absolute right-0 top-0"
-          src="https://i.postimg.cc/sXk0Zrt6/vector1.png"
-          alt=""
-        /> */}
       </div>
     </div>
   );

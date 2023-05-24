@@ -30,7 +30,7 @@ const SingleAppliedJob = ({ singleAppliedJob }) => {
       <div className="border-solid border lg:flex items-center gap-7 border-gray-300 p-9 rounded-lg shadow-xl drop-shadow-lg">
         <div className="w-56 h-56 bg-purple-50 flex justify-center items-center">
           <img
-            className="h-10 w-36 drop-shadow-lg"
+            className=" w-40 drop-shadow-lg"
             src={image}
             alt="CompanyImg"
           />

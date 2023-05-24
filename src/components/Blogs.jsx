@@ -10,10 +10,13 @@ const Blogs = () => {
   return (
     <>
       {/* header section */}
-      <section className="bg-blue-50 relative drop-shadow-xl pt-24 pb-32">
+      <section className="bg-blue-50 relative drop-shadow-xl pb-32">
         <h1 className="text-4xl font-bold text-center">Blogs</h1>
-        <img className="absolute bottom-0" src="https://i.postimg.cc/fyYqcPsw/vector.png" alt="" />
-       
+        <img
+          className="absolute w-72 bottom-0"
+          src="https://i.postimg.cc/fyYqcPsw/vector.png"
+          alt=""
+        />
       </section>
 
       {/* Blog page body */}

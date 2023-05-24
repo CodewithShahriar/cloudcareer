@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-black pt-20 mt-20">
-      <div className="my-container flex gap-16 text-white ">
-        <div className="grid gap-5 w-4/12">
+      <div className="my-container grid md:grid-cols-2 lg:flex gap-16 text-white ">
+        <div className="grid gap-5 lg:w-4/12">
           <h2 className="text-4xl font-bold">Cloud Career</h2>
           <p className="text-base text-gray-400">
             Our platform offers personalized job recommendations based on your
@@ -13,7 +13,7 @@ const Footer = () => {
           </p>
           <div className="flex gap-4">
             {/* <FontAwesomeIcon icon={faFacebookF} /> */}
-            <Link to="https://facebook.com/apurbahasanj/">
+            <Link to="https://facebook.com">
               <div className="rounded-full w-10 h-10 bg-white">
                 <img
                   className="p-2"
@@ -22,7 +22,7 @@ const Footer = () => {
                 />
               </div>
             </Link>
-            <Link to="https://www.instagram.com/apurbahasanj/">
+            <Link to="https://www.instagram.com">
               <div className="rounded-full w-10 h-10 bg-white">
                 <img
                   className="p-2"
@@ -31,7 +31,7 @@ const Footer = () => {
                 />
               </div>
             </Link>
-            <Link to="https://twitter.com/ApurbaHasanJ">
+            <Link to="https://twitter.com">
               <div className="rounded-full w-10 h-10 bg-white">
                 <img
                   className="p-2"
@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Company and product */}
-        <div className="flex gap-28 w-4/12">
+        <div className="flex  gap-28 lg:w-4/12">
           <div className="grid gap-3">
             <h2 className="text-xl font-semibold">Company</h2>
             <div className="grid gap-3 text-base text-gray-400">
@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Support and contact */}
-        <div className="flex gap-20 w-4/12">
+        <div className="flex gap-20 lg:w-4/12">
           <div className="grid gap-3 ">
             <h2 className="text-xl font-semibold">Support</h2>
             <div className="grid gap-3 text-base  text-gray-400">
@@ -84,7 +84,10 @@ const Footer = () => {
         </div>
       </div>
       <hr className="mt-9  text-gray-50"/>
-      <p className="my-container text-base  text-gray-400">@2023 Cloud Career. All Rights Reserved</p>
+      <div className="my-container flex justify-between">
+      <p className=" text-base  text-gray-400">@2023 Cloud Career. All Rights Reserved</p>
+      <p className=" text-base  text-gray-400">Powered by <span className="text-xl font-semibold">Cloud Career</span></p>
+      </div>
     </div>
   );
 };

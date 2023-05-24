@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import { JobCompanies } from "../../App";
+// import { JobCompanies } from "../../App";
 import "./JobDetails.css";
 import {
   BriefcaseIcon,
@@ -11,6 +11,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { addToDb } from "../Utils/FakeDb";
 import { toast } from "react-toastify";
+import { JobCompanies } from "../../App";
 
 const JobDetails = () => {
   const companiesData = useContext(JobCompanies);
@@ -45,8 +46,13 @@ const JobDetails = () => {
   return (
     <>
       {/* header section */}
-      <section className="bg-blue-50 drop-shadow-xl pt-24 pb-32">
+      <section className="bg-blue-50 relative drop-shadow-xl pb-32">
         <h1 className="text-4xl font-bold text-center">Job details</h1>
+        <img
+          className="absolute w-72 bottom-0"
+          src="https://i.postimg.cc/fyYqcPsw/vector.png"
+          alt=""
+        />
       </section>
 
       {/* Body Section */}
