@@ -1,17 +1,14 @@
 import React from "react";
 import "./SingleAppliedJob.css";
 import { CurrencyDollarIcon, MapPinIcon } from "@heroicons/react/24/solid";
-import { Link } from "react-router-dom";
-import { key } from "localforage";
-
-// function YourComponent() {
-//     const history = useHistory();
-
-//     const handleClick = () => {
-//       history.goBack();
-//     };
+import { Link, useNavigation } from "react-router-dom";
+import LoadingSpinner from "../LoadingSpinner";
 
 const SingleAppliedJob = ({ singleAppliedJob }) => {
+  const navigation = useNavigation();
+  if (navigation.state === "loading") {
+    return <LoadingSpinner />;
+  }
   const {
     id,
     image,

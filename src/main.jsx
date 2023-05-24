@@ -1,26 +1,26 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
-import { Router, RouterProvider, createBrowserRouter } from 'react-router-dom'
-import ErrorPage from './components/ErrorPage'
-import Statistics from './components/Statistics'
-import Blogs from './components/Blogs'
-import AppliedJobs from './components/AppliedJobs'
-import Home from './components/Home/Home'
-import { companiesData } from './components/loader/getData'
-import JobDetails from './components/JobDetails/JobDetails'
-import 'react-toastify/dist/ReactToastify.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import { Router, RouterProvider, createBrowserRouter } from "react-router-dom";
+import Statistics from "./components/Statistics";
+import Blogs from "./components/Blogs";
+import AppliedJobs from "./components/AppliedJobs";
+import Home from "./components/Home/Home";
+import { companiesData } from "./components/loader/getData";
+import JobDetails from "./components/JobDetails/JobDetails";
+import "react-toastify/dist/ReactToastify.css";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
     loader: companiesData,
     children: [
       {
-        path: '/',
+        path: "/",
         element: <Home />,
       },
       {
@@ -28,27 +28,26 @@ const router = createBrowserRouter([
         element: <JobDetails />,
       },
       {
-        path: '/statistics',
+        path: "/statistics",
         element: <Statistics />,
-        loader: () => fetch("statistics.json")
+        loader: () => fetch("statistics.json"),
       },
       {
-        path: '/blogs',
-        element: <Blogs />
+        path: "/blogs",
+        element: <Blogs />,
       },
       {
-        path: '/appliedJobs',
-        element: <AppliedJobs />
+        path: "/appliedJobs",
+        element: <AppliedJobs />,
       },
-      
-    ]
-  }
-])
+    ],
+  },
+]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router}>
       <Router />
     </RouterProvider>
   </React.StrictMode>
-)
+);

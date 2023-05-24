@@ -3,7 +3,7 @@ import "./Home.css";
 import React, { useContext, useEffect, useState } from "react";
 import JobList from "../JobList";
 import { JobCompanies } from "../../App";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigation } from "react-router-dom";
 import CompanyData from "../Companydata/CompanyData";
 
 const Home = () => {

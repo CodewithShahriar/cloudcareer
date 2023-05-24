@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigation } from "react-router-dom";
 import {
   AreaChart,
   Area,
@@ -9,8 +9,13 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import LoadingSpinner from "./LoadingSpinner";
 
 const Statistics = () => {
+  const navigation = useNavigation();
+  if (navigation.state === "loading") {
+    return <LoadingSpinner />;
+  }
   const assignmentData = useLoaderData();
   console.log(assignmentData);
   return (

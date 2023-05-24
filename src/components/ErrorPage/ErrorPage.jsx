@@ -1,22 +1,23 @@
 import { FaceFrownIcon } from "@heroicons/react/24/solid";
 import React from "react";
 import { Link, useRouteError } from "react-router-dom";
+import './ErrorPage.css'
 
 const ErrorPage = () => {
   const { error, status } = useRouteError();
   return (
-    <section className="flex items-center h-screen p-16 bg-gray-100 text-gray-900">
+    <section className="flex items-center h-screen p-16 bg-gray-100  text-gray-900">
       <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
-        <FaceFrownIcon className="w-40 h-40 text-yellow-500" />
+        <FaceFrownIcon className="w-40 h-40 drop-shadow-2xl  text-purple-400" />
         <div className="max-w-md text-center">
-          <h2 className="mb-8 font-extrabold text-9xl text-yellow-500">
+          <h2 className="mb-8 font-extrabold text-9xl drop-shadow-2xl color-gradient">
             <span className="sr-only">Error</span>
             {status || 404}
           </h2>
-          <p className="text-2xl font-semibold md:text-3xl text-red-800 mb-8">
+          <p className="text-2xl font-semibold md:text-3xl drop-shadow-2xl text-rose-600 mb-8">
             {error?.message}
           </p>
-          <Link to="/" className="btn">
+          <Link to="/" className="btn drop-shadow-2xl">
             Back to homepage
           </Link>
         </div>
