@@ -1,5 +1,5 @@
 
-# Live Site : [Cloud Career](https://rococo-custard-3eb140.netlify.app/ )
+## Live Site : [Cloud Career](https://rococo-custard-3eb140.netlify.app/ )
 ---
 
 ## Features Overview
@@ -29,3 +29,7 @@
 ## About the project
 ---
 The front-end of the project was built using React, a popular JavaScript library for building user interfaces. To manage the application state, the Context API was utilized. In terms of styling, Tailwind CSS was chosen as the CSS framework due to its utility-first approach and flexibility in designing responsive layouts.
+
+
+
+![preview img](/preview.png)

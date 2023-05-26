@@ -53,7 +53,7 @@ const Home = () => {
           <div>
             <img
               className="header-img ml-auto"
-              src="https://i.postimg.cc/CM82pRqW/header-poster1.png"
+              src="https://www.freepnglogos.com/uploads/businessman-png/businessman-home-paragon-web-development-paragontech-web-1.png"
               alt="img"
             />
           </div>
